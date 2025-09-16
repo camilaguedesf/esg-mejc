@@ -9,8 +9,8 @@ import io
 
 # Configuração da página
 st.set_page_config(
-    page_title="IG-SEST Dashboard - MEJC-UFRN",
-    page_icon="🏥",
+    page_title="IG-SEST Painel - MEJC-UFRN",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -62,77 +62,77 @@ def load_data():
     
     data = [
         # DIMENSÃO 1: CONSELHOS E DIRETORIA
-        {"questao": "Q2", "descricao": "Colegiado Executivo se reúne semanalmente", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q4", "descricao": "Colex participa de capacitações em gestão hospitalar", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q5", "descricao": "Colex participa de capacitações em governança corporativa", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q6", "descricao": "Colex aprecia relatório de capacitação anualmente", "dimensao": "Conselhos e Diretoria", "fonte": "IG-Sest e Decreto nº 8.945/2016", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q7", "descricao": "Colex aprecia relatório de denúncias trimestralmente", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q8", "descricao": "Colex aprecia relatório AOC trimestralmente", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q10", "descricao": "Colex aprecia relatório CSI semestralmente", "dimensao": "Conselhos e Diretoria", "fonte": "IG-Sest e Resolução CGPAR nº 41/2022", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q11", "descricao": "Colex delibera sobre AOC e PAC", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Alta"},
-        {"questao": "Q13", "descricao": "Colex aprecia execução do PAC trimestralmente", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q15", "descricao": "Colex delibera sobre Plano de Contratações Anual", "dimensao": "Conselhos e Diretoria", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q17", "descricao": "Colex delibera sobre PDTI anualmente", "dimensao": "Conselhos e Diretoria", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q18", "descricao": "Colex aprecia execução do PDTI semestralmente", "dimensao": "Conselhos e Diretoria", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q19", "descricao": "Comitê de Governança Digital ativo", "dimensao": "Conselhos e Diretoria", "fonte": "Resolução CGPAR/ME 41/2022", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q20", "descricao": "Núcleo de Gestão do AGHU ativo", "dimensao": "Conselhos e Diretoria", "fonte": "Portaria 630/2019", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q22", "descricao": "Plano de Transição de Gestão implementado", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q23", "descricao": "Conselho Consultivo funcionando", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q24", "descricao": "Conselho Consultivo com representação adequada", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q25", "descricao": "Comissão de Desenvolvimento de Pessoal ativa", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q27", "descricao": "Comissão de Mediação e Conciliação ativa", "dimensao": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q2", "descrição": "Colegiado Executivo se reúne semanalmente", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q4", "descrição": "Colex participa de capacitações em gestão hospitalar", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q5", "descrição": "Colex participa de capacitações em governança corporativa", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q6", "descrição": "Colex aprecia relatório de capacitação anualmente", "dimensão": "Conselhos e Diretoria", "fonte": "IG-Sest e Decreto nº 8.945/2016", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q7", "descrição": "Colex aprecia relatório de denúncias trimestralmente", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q8", "descrição": "Colex aprecia relatório AOC trimestralmente", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q10", "descrição": "Colex aprecia relatório CSI semestralmente", "dimensão": "Conselhos e Diretoria", "fonte": "IG-Sest e Resolução CGPAR nº 41/2022", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q11", "descrição": "Colex delibera sobre AOC e PAC", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Alta"},
+        {"questão": "Q13", "descrição": "Colex aprecia execução do PAC trimestralmente", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q15", "descrição": "Colex delibera sobre Plano de Contratações Anual", "dimensão": "Conselhos e Diretoria", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q17", "descrição": "Colex delibera sobre PDTI anualmente", "dimensão": "Conselhos e Diretoria", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q18", "descrição": "Colex aprecia execução do PDTI semestralmente", "dimensão": "Conselhos e Diretoria", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q19", "descrição": "Comitê de Governança Digital ativo", "dimensão": "Conselhos e Diretoria", "fonte": "Resolução CGPAR/ME 41/2022", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q20", "descrição": "Núcleo de Gestão do AGHU ativo", "dimensão": "Conselhos e Diretoria", "fonte": "Portaria 630/2019", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q22", "descrição": "Plano de Transição de Gestão implementado", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q23", "descrição": "Conselho Consultivo funcionando", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q24", "descrição": "Conselho Consultivo com representação adequada", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q25", "descrição": "Comissão de Desenvolvimento de Pessoal ativa", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q27", "descrição": "Comissão de Mediação e Conciliação ativa", "dimensão": "Conselhos e Diretoria", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
         
         # DIMENSÃO 2: TRANSPARÊNCIA
-        {"questao": "Q29", "descricao": "PDE considera processos prioritários", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q31", "descricao": "PDE considera pesquisas de satisfação", "dimensao": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q33", "descricao": "Colex aprecia relatório do PDE quadrimestralmente", "dimensao": "Transparência", "fonte": "Portaria SEI VP nº 01/2025", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q35", "descricao": "PDE considera diagnóstico ambiental", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
-        {"questao": "Q36", "descricao": "Colex delibera revisão anual do PDE", "dimensao": "Transparência", "fonte": "Portaria SEI VP nº 01/2025", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q38", "descricao": "Investimentos AOC constam no PDE", "dimensao": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q51", "descricao": "Atende 100% requisitos transparência CGU", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Alta"},
-        {"questao": "Q53", "descricao": "Atualiza informações contratos/orçamento mensalmente", "dimensao": "Transparência", "fonte": "IESGO-TCU e IG-SEST", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q54", "descricao": "Divulga atas do Colegiado Executivo", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q55", "descricao": "Divulga atas do Conselho Consultivo", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
-        {"questao": "Q56", "descricao": "Divulga currículo dos ocupantes de cargos", "dimensao": "Transparência", "fonte": "IG-SEST", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q58", "descricao": "Divulga procedimentos licitatórios", "dimensao": "Transparência", "fonte": "IG-SEST e Lei nº 13.303/2016", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q59", "descricao": "Divulga Relatório de Gestão anualmente", "dimensao": "Transparência", "fonte": "IG-Sest", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q61", "descricao": "Publica relatório de acesso à informação", "dimensao": "Transparência", "fonte": "IESGO-TCU e Lei 12.527/2011", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q63", "descricao": "Publica agenda de compromissos públicos", "dimensao": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q65", "descricao": "Publica número de denúncias", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q67", "descricao": "Publica Boletim de Serviços mensalmente", "dimensao": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q69", "descricao": "Realiza pesquisa de satisfação do ensino", "dimensao": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q71", "descricao": "Realiza pesquisa de clima organizacional", "dimensao": "Transparência", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q72", "descricao": "Realiza pesquisa de satisfação usuários SUS", "dimensao": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q74", "descricao": "Realiza pesquisa de satisfação pesquisadores", "dimensao": "Transparência", "fonte": "IESGO-TCU e Boas Práticas Clínicas", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q29", "descrição": "PDE considera processos prioritários", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q31", "descrição": "PDE considera pesquisas de satisfação", "dimensão": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q33", "descrição": "Colex aprecia relatório do PDE quadrimestralmente", "dimensão": "Transparência", "fonte": "Portaria SEI VP nº 01/2025", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q35", "descrição": "PDE considera diagnóstico ambiental", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q36", "descrição": "Colex delibera revisão anual do PDE", "dimensão": "Transparência", "fonte": "Portaria SEI VP nº 01/2025", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q38", "descrição": "Investimentos AOC constam no PDE", "dimensão": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q51", "descrição": "Atende 100% requisitos transparência CGU", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Alta"},
+        {"questão": "Q53", "descrição": "Atualiza informações contratos/orçamento mensalmente", "dimensão": "Transparência", "fonte": "IESGO-TCU e IG-SEST", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q54", "descrição": "Divulga atas do Colegiado Executivo", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q55", "descrição": "Divulga atas do Conselho Consultivo", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q56", "descrição": "Divulga currículo dos ocupantes de cargos", "dimensão": "Transparência", "fonte": "IG-SEST", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q58", "descrição": "Divulga procedimentos licitatórios", "dimensão": "Transparência", "fonte": "IG-SEST e Lei nº 13.303/2016", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q59", "descrição": "Divulga Relatório de Gestão anualmente", "dimensão": "Transparência", "fonte": "IG-Sest", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q61", "descrição": "Publica relatório de acesso à informação", "dimensão": "Transparência", "fonte": "IESGO-TCU e Lei 12.527/2011", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q63", "descrição": "Publica agenda de compromissos públicos", "dimensão": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q65", "descrição": "Publica número de denúncias", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q67", "descrição": "Publica Boletim de Serviços mensalmente", "dimensão": "Transparência", "fonte": "Boas práticas", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q69", "descrição": "Realiza pesquisa de satisfação do ensino", "dimensão": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q71", "descrição": "Realiza pesquisa de clima organizacional", "dimensão": "Transparência", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q72", "descrição": "Realiza pesquisa de satisfação usuários SUS", "dimensão": "Transparência", "fonte": "IESGO-TCU", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q74", "descrição": "Realiza pesquisa de satisfação pesquisadores", "dimensão": "Transparência", "fonte": "IESGO-TCU e Boas Práticas Clínicas", "status": "Não Conforme", "prioridade": "Baixa"},
         
         # DIMENSÃO 3: GERENCIAMENTO DE RISCOS, CONTROLES E AUDITORIA
-        {"questao": "Q40", "descricao": "Realiza treinamento sobre Código de Ética", "dimensao": "Riscos e Controles", "fonte": "IESGO-TCU e IG-Sest", "status": "Conforme", "prioridade": "Alta"},
-        {"questao": "Q42", "descricao": "Orienta empregados sobre Código de Ética", "dimensao": "Riscos e Controles", "fonte": "IG-Sest, IBGC e Lei nº 13.303/2016", "status": "Conforme", "prioridade": "Alta"},
-        {"questao": "Q44", "descricao": "Treinamento sobre conflito de interesses", "dimensao": "Riscos e Controles", "fonte": "IG-Sest, IBGC e Lei nº 6.404/1976", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q45", "descricao": "Possui Plano de Continuidade de Negócios", "dimensao": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q46", "descricao": "Colex aprecia relatório de riscos semestralmente", "dimensao": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q47", "descricao": "Colex aprecia incidentes assistenciais trimestralmente", "dimensao": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q48", "descricao": "Colex delibera sobre matriz de riscos", "dimensao": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
-        {"questao": "Q49", "descricao": "Possui plano de contingência climática", "dimensao": "Riscos e Controles", "fonte": "IG-Sest", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q50", "descricao": "Possui ETIR implementada", "dimensao": "Riscos e Controles", "fonte": "IG-Sest e Decreto nº 10.748/2021", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q40", "descrição": "Realiza treinamento sobre Código de Ética", "dimensão": "Riscos e Controles", "fonte": "IESGO-TCU e IG-Sest", "status": "Conforme", "prioridade": "Alta"},
+        {"questão": "Q42", "descrição": "Orienta empregados sobre Código de Ética", "dimensão": "Riscos e Controles", "fonte": "IG-Sest, IBGC e Lei nº 13.303/2016", "status": "Conforme", "prioridade": "Alta"},
+        {"questão": "Q44", "descrição": "Treinamento sobre conflito de interesses", "dimensão": "Riscos e Controles", "fonte": "IG-Sest, IBGC e Lei nº 6.404/1976", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q45", "descrição": "Possui Plano de Continuidade de Negócios", "dimensão": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q46", "descrição": "Colex aprecia relatório de riscos semestralmente", "dimensão": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q47", "descrição": "Colex aprecia incidentes assistenciais trimestralmente", "dimensão": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q48", "descrição": "Colex delibera sobre matriz de riscos", "dimensão": "Riscos e Controles", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Alta"},
+        {"questão": "Q49", "descrição": "Possui plano de contingência climática", "dimensão": "Riscos e Controles", "fonte": "IG-Sest", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q50", "descrição": "Possui ETIR implementada", "dimensão": "Riscos e Controles", "fonte": "IG-Sest e Decreto nº 10.748/2021", "status": "Não Conforme", "prioridade": "Alta"},
         
         # RESPONSABILIDADE SOCIAL
-        {"questao": "Q75", "descricao": "Programas de saúde do trabalhador", "dimensao": "Responsabilidade Social", "fonte": "IG-Sest e Decreto Legislativo nº 2/1992", "status": "Conforme", "prioridade": "Média"},
-        {"questao": "Q77", "descricao": "Colex aprecia relatório PCDs e PNPs", "dimensao": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q78", "descricao": "Divulga ocupantes por gênero e raça", "dimensao": "Responsabilidade Social", "fonte": "IG-Sest", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q79", "descricao": "Programa mulheres vítimas de violência", "dimensao": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
-        {"questao": "Q80", "descricao": "Normas de acessibilidade em contratações", "dimensao": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q81", "descricao": "Proporcionalidade de gênero em cargos", "dimensao": "Responsabilidade Social", "fonte": "IG-SEST", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q82", "descricao": "Proporcionalidade racial em cargos", "dimensao": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q83", "descricao": "Ações de diversidade e inclusão", "dimensao": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q84", "descricao": "Ações de saúde pública com comunidade", "dimensao": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
-        {"questao": "Q85", "descricao": "Inclusão de grupos marginalizados", "dimensao": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q86", "descricao": "Programas de voluntariado", "dimensao": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q75", "descrição": "Programas de saúde do trabalhador", "dimensão": "Responsabilidade Social", "fonte": "IG-Sest e Decreto Legislativo nº 2/1992", "status": "Conforme", "prioridade": "Média"},
+        {"questão": "Q77", "descrição": "Colex aprecia relatório PCDs e PNPs", "dimensão": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q78", "descrição": "Divulga ocupantes por gênero e raça", "dimensão": "Responsabilidade Social", "fonte": "IG-Sest", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q79", "descrição": "Programa mulheres vítimas de violência", "dimensão": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q80", "descrição": "Normas de acessibilidade em contratações", "dimensão": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q81", "descrição": "Proporcionalidade de gênero em cargos", "dimensão": "Responsabilidade Social", "fonte": "IG-SEST", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q82", "descrição": "Proporcionalidade racial em cargos", "dimensão": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q83", "descrição": "Ações de diversidade e inclusão", "dimensão": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q84", "descrição": "Ações de saúde pública com comunidade", "dimensão": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q85", "descrição": "Inclusão de grupos marginalizados", "dimensão": "Responsabilidade Social", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q86", "descrição": "Programas de voluntariado", "dimensão": "Responsabilidade Social", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Baixa"},
         
         # SUSTENTABILIDADE
-        {"questao": "Q87", "descricao": "Atende 70% conformidade ambiental", "dimensao": "Sustentabilidade", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q88", "descricao": "Possui Plano de Logística Sustentável", "dimensao": "Sustentabilidade", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
-        {"questao": "Q89", "descricao": "Publica inventário gases efeito estufa", "dimensao": "Sustentabilidade", "fonte": "IG-Sest", "status": "Não Conforme", "prioridade": "Baixa"},
+        {"questão": "Q87", "descrição": "Atende 70% conformidade ambiental", "dimensão": "Sustentabilidade", "fonte": "Boas práticas", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q88", "descrição": "Possui Plano de Logística Sustentável", "dimensão": "Sustentabilidade", "fonte": "IESGO-TCU", "status": "Não Conforme", "prioridade": "Média"},
+        {"questão": "Q89", "descrição": "Publica inventário gases efeito estufa", "dimensão": "Sustentabilidade", "fonte": "IG-Sest", "status": "Não Conforme", "prioridade": "Baixa"},
     ]
     
     return pd.DataFrame(data)
@@ -162,7 +162,7 @@ def create_overview_charts(df):
     )
     
     # Gráfico de barras por dimensão
-    dimension_summary = df.groupby(['dimensao', 'status']).size().unstack(fill_value=0)
+    dimension_summary = df.groupby(['dimensão', 'status']).size().unstack(fill_value=0)
     
     fig_bar = go.Figure()
     
@@ -225,7 +225,7 @@ def calculate_metrics(df):
     taxa_conformidade = (conformes / total_questoes) * 100
     
     # Métricas por dimensão
-    dim_metrics = df.groupby('dimensao')['status'].agg(['count', lambda x: (x == 'Conforme').sum()]).round(2)
+    dim_metrics = df.groupby('dimensão')['status'].agg(['count', lambda x: (x == 'Conforme').sum()]).round(2)
     dim_metrics.columns = ['total', 'conformes']
     dim_metrics['taxa'] = (dim_metrics['conformes'] / dim_metrics['total'] * 100).round(1)
     
@@ -247,7 +247,7 @@ def export_to_excel(df):
         df.to_excel(writer, sheet_name='Conformidades', index=False)
         
         # Resumo por dimensão
-        summary = df.groupby(['dimensao', 'status']).size().unstack(fill_value=0)
+        summary = df.groupby(['dimensão', 'status']).size().unstack(fill_value=0)
         summary['Total'] = summary.sum(axis=1)
         summary['Taxa_Conformidade'] = (summary.get('Conforme', 0) / summary['Total'] * 100).round(2)
         summary.to_excel(writer, sheet_name='Resumo_Dimensoes')
@@ -264,7 +264,7 @@ def main():
     # Header
     st.markdown("""
     <div class="main-header">
-        <h1>🏥 Dashboard IG-SEST</h1>
+        <h1> Painel IG-SEST</h1>
         <h3>Maternidade Escola Januário Cicco - UFRN</h3>
         <p>Análise de Conformidades em Governança Corporativa</p>
     </div>
@@ -280,8 +280,8 @@ def main():
     # Filtros
     dimensoes_selecionadas = st.sidebar.multiselect(
         "Dimensões:",
-        options=df['dimensao'].unique(),
-        default=df['dimensao'].unique()
+        options=df['dimensão'].unique(),
+        default=df['dimensão'].unique()
     )
     
     status_selecionado = st.sidebar.multiselect(
@@ -298,7 +298,7 @@ def main():
     
     # Filtrar dados
     df_filtered = df[
-        (df['dimensao'].isin(dimensoes_selecionadas)) &
+        (df['dimensão'].isin(dimensoes_selecionadas)) &
         (df['status'].isin(status_selecionado)) &
         (df['prioridade'].isin(prioridade_selecionada))
     ]
@@ -367,14 +367,14 @@ def main():
         ]
         
         for _, row in alta_prioridade.head(5).iterrows():
-            st.markdown(f"**{row['questao']}:** {row['descricao'][:50]}...")
+            st.markdown(f"**{row['questão']}:** {row['descrição'][:50]}...")
     
     # Performance por dimensão
     st.markdown("## 🎯 Performance por Dimensão")
     
     for dim in metrics['dimensoes'].index:
         with st.expander(f"{dim} - {metrics['dimensoes'].loc[dim, 'taxa']}% de conformidade"):
-            dim_data = df[df['dimensao'] == dim]
+            dim_data = df[df['dimensão'] == dim]
             
             col1, col2, col3 = st.columns(3)
             
@@ -387,7 +387,7 @@ def main():
             
             # Tabela detalhada da dimensão
             st.dataframe(
-                dim_data[['questao', 'descricao', 'status', 'prioridade', 'fonte']],
+                dim_data[['questão', 'descrição', 'status', 'prioridade', 'fonte']],
                 use_container_width=True
             )
     
@@ -404,9 +404,9 @@ def main():
     
     # Renomear colunas com acentos e maiúsculas
     df_display = df_filtered.rename(columns={
-        'questao': 'Questão',
-        'descricao': 'Descrição',
-        'dimensao': 'Dimensão',
+        'questão': 'Questão',
+        'descrição': 'Descrição',
+        'dimensão': 'Dimensão',
         'fonte': 'Fonte',
         'status': 'Status',
         'prioridade': 'Prioridade'
@@ -439,10 +439,7 @@ def main():
             mime="text/csv"
         )
     
-    with col3:
-        if st.button("🔄 Atualizar Dados"):
-            st.cache_data.clear()
-            st.experimental_rerun()
+    
     
     # Footer
     st.markdown("---")
